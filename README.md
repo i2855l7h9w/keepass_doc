@@ -13,9 +13,9 @@ Gestion facile des mots de passe.
 
 ## Principe
 
-Un fichier Keepass crypté
-Un mot de passe principal
-Une sauvegarde "cloud" de synchronisation
+* Un fichier Keepass crypté
+* Un mot de passe principal
+* Une sauvegarde "cloud" de synchronisation
 
 ## Bonnes pratiques
 
