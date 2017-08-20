@@ -160,7 +160,7 @@ La solution temporaire la plus simple est KeeWeb (+ Dropbox) et des copier-colle
 
 ## [Annexe](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md)
 
-[Pourquoi Keepass?](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#utilisation-et-configuration-de-keepass2) 
-[Les bonnes pratiques](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#bonnes-pratiques)
-[Configurer Keepass2](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#utilisation-et-configuration-de-keepass2) 
-[Les alternatives](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#alternatives)
+* [Pourquoi Keepass?](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#utilisation-et-configuration-de-keepass2) 
+* [Les bonnes pratiques](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#bonnes-pratiques)
+* [Configurer Keepass2](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#utilisation-et-configuration-de-keepass2) 
+* [Les alternatives](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#alternatives)
