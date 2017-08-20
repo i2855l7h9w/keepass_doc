@@ -129,7 +129,7 @@ Installer [drive](https://github.com/odeke-em/drive#installation) pour linux.
 
 Ensuite un script va vérifier régulièrement que le fichier a été mis à jour: [scriptCheckDiff.sh](https://github.com/i2855l7h9w/keepass_doc/blob/master/debian/scriptCheckDiff.sh).
 
-Il est nécessaire de le lancer au démarrage de la session: [scripSaveGDrive.desktop](https://github.com/i2855l7h9w/keepass_doc/blob/master/debian/gnome/scripSaveGDrive.desktop) à copier dans `~/.config/autostart` pour le cas de *Gnome*)
+Il est nécessaire de le lancer au démarrage de la session: [scriptSaveGDrive.desktop](https://github.com/i2855l7h9w/keepass_doc/blob/master/debian/gnome/scriptSaveGDrive.desktop) à copier dans `~/.config/autostart` pour le cas de *Gnome*)
 
 Puis il lance le script de synchronisation des répertoires si besoin: [scriptSaveGDrive.sh](https://github.com/i2855l7h9w/keepass_doc/blob/master/debian/scriptSaveGDrive.sh)
 
