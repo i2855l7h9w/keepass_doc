@@ -109,13 +109,11 @@ Plus d'informations à venir si nous en trouvons.
 Proposez vos solutions!
 </p></details>
 
-Vous devez maintenant être capables de remplir automatiquement les mots de passe:
-* se rendre sur la page internet désirée (avec le curseur prêt à taper le login)
-* faire `ctrl + alt + A`
-* sélectionner le mot de passe à remplir (plusieurs peuvent correspondre si vous avez plusieurs profils)
-* Appuyer sur `Entrée`... Et voila!
-
-> Vous avez donc maintenant la sauvegarde sécurisée des mots de passe et le remplissage automatique qui fonctionne.
+> Vous avez donc maintenant la sauvegarde sécurisée des mots de passe et le remplissage automatique qui fonctionne:
+> * se rendre sur la page internet désirée (avec le curseur prêt à taper le login)
+> * faire `ctrl + alt + A`
+> * sélectionner le mot de passe à remplir (plusieurs peuvent correspondre si vous avez plusieurs profils)
+> * Appuyer sur `Entrée`... Et voila!
 
 ### Sauvegarde et synchronisation du fichier
 
