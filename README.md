@@ -31,7 +31,8 @@ La commande suivante est également une possibilité:
 ```
 sudo apt-get install keepass2
 ```
-*Il est par la suite possible de maintenir Keepass2 à jour en ouvrant les archives obtenue depuis le site officiel et en écrasant les fichiers dans le répertoire de l'exécutable.*
+_Il est par la suite possible de maintenir Keepass2 à jour en ouvrant les archives obtenue depuis le site officiel et en écrasant les fichiers dans le répertoire de l'exécutable.\
+Il est possible de lancer keepass2 en tant qu'administrateur pour répondre définitivement à la pop-up de vérification de mise à jour._
 
 </p></details>
 
