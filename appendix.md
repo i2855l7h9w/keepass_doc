@@ -2,14 +2,6 @@
 
 Vous trouvez ici divers trucs et astuces.
 
-## Utilisation et configuration de Keepass2
-
-* nombre de passes de cryptage
-* mot de passe par défaut (40 caractères générés au hasard)
-* séquence de remplissage
-* référencer un autre identifiant/mot de passe
-* mettre un délai avant remplissage
-
 ## Avantages
 
 * 1 seul mot de passe à retenir
@@ -49,8 +41,33 @@ Il est parfois possible en revanche d'activer le remplissage du mot de passe seu
 ## Alternatives
 
 Il existe d'autres logiciels compatibles avec les fichier `.kdbx`.
+* [Keepass2](https://keepass.info) est une très bonne alternative.
+  Pour Debian/Ubuntu:
+  
+  Il vous faudra installer `xdotool`.
+
+  Vérifier que l'exécutable `KeePass.exe` se situe dans le répertoire `/usr/lib/keepass2/`, et si ce n'est pas le cas, chercher avec la commande:
+  ```
+  find / -name KeePass.exe
+  ```
+  Ensuite, ajouter le raccourci de clavier personnalisé (`paramètres/clavier`) pour `ctrl + alt + A` qui lance la commande suivante (en fournissant le chemin correct vers l'exécutable):
+  ```
+  mono /usr/lib/keepass2/KeePass.exe --auto-type
+  ```
+  Astuces :
+  * _Il est possible de lancer keepass2 en tant qu'administrateur pour répondre définitivement à la pop-up de vérification de mise à jour._
+  * _Si la saisie est parfois problématique sous debian (caractères mal frappés) cela peut être dû à plusieurs configurations de saisie de clavier (il faut se limiter à une "langue" de clavier dans le système)_
+  
 * [KeeWeb](https://keeweb.info/) en est un (en plus de fournir une page web comme mentionné plus tôt)
 * [KeepassX](https://www.keepassx.org/) en est un autre.
 
 Par ailleurs [LastPass](https://www.lastpass.com/fr) rempli quasiment la même fonction, mais en ligne.
 Donc votre fichier est sauvegardé sur les serveurs de lastpass, et le mot de passe transite aussi potentiellement par leur serveurs. Pour faire court, c'est plus simple à utiliser, mais un peu moins sécurisé.
+
+### Utilisation et configuration de Keepass2
+
+* nombre de passes de cryptage
+* mot de passe par défaut (40 caractères générés au hasard)
+* séquence de remplissage
+* référencer un autre identifiant/mot de passe
+* mettre un délai avant remplissage
