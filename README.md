@@ -13,32 +13,30 @@ Gestion sécurisée et simple des mots de passe.
 ### Installation
 
 Il vous faudra tout d'abord obtenir le logiciel de gestion des mots de passe.
-Sur PC, le choix de [Keepass2](http://keepass.info/) est présenté (avec en soutient [KeeWeb](https://app.keeweb.info/)), mais des [alternatives](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#alternatives) existent.
+Sur PC, le choix de [KeePassXC](https://keepassxc.org) est présenté (avec en soutient [KeeWeb](https://app.keeweb.info/)), mais des [alternatives](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#alternatives) existent.
 
 <details><summary> Pour Windows </summary><p>
 
-Télécharger et lancer l'installation de Keepass2 depuis le [site de keepass](http://keepass.info/download.html).
+Télécharger et lancer l'installation de KeePassXC depuis le [site de KeePassXC](https://keepassxc.org/download/#windows).
 </p></details>
 
 
 <details><summary> Pour Debian/Ubuntu </summary><p>
 
-Le paquet keepass2 est disponible dans les dépôts.
+Le paquet keepassxc est disponible dans les dépôts.
 
-La logithèque Ubuntu le propose donc : recherchez `keepass2`.
+La logithèque Ubuntu le propose donc : recherchez `keepassxc`.
 
 La commande suivante est également une possibilité:
 ```
-sudo apt-get install keepass2
+sudo apt-get install keepassxc
 ```
-_Il est par la suite possible de maintenir Keepass2 à jour en ouvrant les archives obtenue depuis le site officiel et en écrasant les fichiers dans le répertoire de l'exécutable.\
-Il est possible de lancer keepass2 en tant qu'administrateur pour répondre définitivement à la pop-up de vérification de mise à jour._
 
 </p></details>
 
 <details><summary> Pour OSX </summary><p>
 
-Pas encore de conseil à donner, si ce n'est cette [page](https://sourceforge.net/p/keepass/discussion/329220/thread/eb00d276/?limit=25&page=0).
+Suivez les instructions de [la page dédiée sur le site de KeePassXC](https://keepassxc.org/download/#mac)
 </p></details>
 
 <details><summary> Logiciel en ligne </summary><p>
@@ -52,12 +50,13 @@ C'est aussi une bonne alternative quand on n'a pas la possibilité d'installer u
 
 <details><summary> Pour Android </summary><p>
 
-[Keepass2Android](https://play.google.com/apps/testing/keepass2android.keepass2android) semble être une bonne option (non testée).
+[Keepass2Android](https://play.google.com/apps/testing/keepass2android.keepass2android) est une bonne option (fonctionne pour le TOTP également).
 </p></details>
 
 <details><summary> Pour iOS </summary><p>
 
-Là encore, une option non-testée semble disponible gratuitement: [MiniKeePass](https://itunes.apple.com/fr/app/minikeepass-secure-password-manager/id451661808?mt=8)
+Une option non-testée semble disponible gratuitement : [MiniKeePass](https://itunes.apple.com/fr/app/minikeepass-secure-password-manager/id451661808?mt=8)
+Une autre possibilité OpenSource : [Strongbox](https://itunes.apple.com/us/app/strongbox-password-safe/id897283731)
 </p></details>
 
 
@@ -65,7 +64,7 @@ Là encore, une option non-testée semble disponible gratuitement: [MiniKeePass]
 
 * Pour commencer, créer un nouveau fichier de base de données de mot de passe.
 * Définir son nom.
-* Si possible passer le nombre d'itérations (onglet sécurité) à `500000`.
+* Si possible passer le nombre d'itérations (onglet chiffrement) à plus de `25`, avec comme fonction de dérivation Argon2.
 * Rentrer 1 ou 2 mots de passe: **l'adresse** de la page où vous avez besoin de les taper, le **login** et le **mot de passe** correspondant (et éventuellement la séquence de **saisie automatique**). Ces premiers mots de passe vous permettrons de tester que tout fonctionne bien à chaque étape. Choisir donc plutôt des mots de passe pas trop importants (et que vous pourrez changer si un problème survient).
 
 > A ce stade, il est possible de copier/coller les mots de passe à chaque fois que vous en avez besoin, donc tout est déjà utilisable. Nous allons essayer de faire encore mieux.
@@ -77,31 +76,10 @@ Pour cela il vous faudra d'abord installer un addon à votre navigateur:
 * Firefox: [Add URL to Window Title](https://addons.mozilla.org/fr/firefox/addon/add-url-to-window-title/)
 * Chrome: [Url in title](https://chrome.google.com/webstore/detail/url-in-title/ignpacbgnbnkaiooknalneoeladjnfgb?utm_source=chrome-app-launcher-info-dialog)
 
-Pour Keepass2, dans le menu `Outils/Option`, onglet `Avancé` dans la partie `Saisie automatique` cocher les 6 cases (il est possible de les décocher ensuite suivant vos besoins).
+Pour KeePassXC, dans le menu `Outils/Option`, onglet `Avancé` dans la partie `Saisie automatique` cocher les 6 cases (il est possible de les décocher ensuite suivant vos besoins).
 
 Il faut ensuite activer le remplissage automatique:
-<details><summary> Pour Windows </summary><p>
-
-Par défaut, le raccourci clavier `ctrl + alt + A` fonctionne (et il est possible de configurer un autre raccourci).
-</p></details>
-
-<details><summary> Pour Debian/Ubuntu </summary><p>
-
-Il faut tout d'abord installer `xdotool` qui permet d'émuler une frappe au clavier:
-```
-sudo apt-get install xdotool
-```
-Si la saisie est parfois problématique (caractères mal frappés) cela peut être dû à plusieurs configurations de saisie de clavier (il faut se limiter à une "langue" de clavier dans le système)
-
-Vérifier que l'exécutable `KeePass.exe` se situe dans le répertoire `/usr/lib/keepass2/`, et si ce n'est pas le cas, chercher avec la commande:
-```
-find / -name KeePass.exe
-```
-Ensuite, ajouter le raccourci de clavier personnalisé (`paramètres/clavier`) pour `ctrl + alt + A` qui lance la commande suivante (en fournissant le chemin correct vers l'exécutable):
-```
-mono /usr/lib/keepass2/KeePass.exe --auto-type
-```
-</p></details>
+Dans `Outils/Paramètres/Général/Saisie automatique` vous pouvez configurer votre raccourci clavier.
 
 <details><summary>
 Pour les autres plateformes, il vous faudra probablement copier/coller ou suivre les recommandation de l'application utilisée...</summary><p>
@@ -115,6 +93,19 @@ Proposez vos solutions!
 > * faire `ctrl + alt + A`
 > * sélectionner le mot de passe à remplir (plusieurs peuvent correspondre si vous avez plusieurs profils)
 > * Appuyer sur `Entrée`... Et voila!
+
+#### Gestion de l'authentification à 2 facteurs basée sur le temps (TOTP)
+
+KeePassXC gère nativement le TOTP. \
+Pour cela, une fois que vous avez créé une entrée de base de donnée:
+* clic-droit sur l'entrée en question, puis "Mot de passe à usage unique basé sur le temps"/"Configurer TOTP".
+* ajouter la clé secrète TOTP (identifiant de sécurité TOTP), ne changez pas les autres champs (sauf sites particuliers et informations fournies par ailleurs). \
+  Celle-ci est généralement obtenue en disant sur les sites en question qu'on n'arrive pas à scanner le QR-code.
+
+Ensuite utiliser/consulter le code de validation toujours via clic-droit puis "Mot de passe à usage unique basé sur le temps"/"Afficher TOTP". \
+Il est également possible de configurer le remplissage automatique en utilisant la valeur `{TOTP}`.
+
+NB : Il est recommandé de stocker cette clé secrète TOTP dans des appareils et bases de données différentes, c'est le principe même de l'authentification à 2 facteurs.
 
 ### Sauvegarde et synchronisation du fichier
 
@@ -163,5 +154,4 @@ La solution temporaire la plus simple est KeeWeb (+ Dropbox) et des copier-colle
 
 * [Pourquoi Keepass?](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#utilisation-et-configuration-de-keepass2) 
 * [Les bonnes pratiques](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#bonnes-pratiques)
-* [Configurer Keepass2](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#utilisation-et-configuration-de-keepass2) 
 * [Les alternatives](https://github.com/i2855l7h9w/keepass_doc/blob/master/appendix.md#alternatives)
