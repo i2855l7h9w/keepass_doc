@@ -21,7 +21,7 @@ En cas de perte/écrasement du fichier (même par l'intermédiaire des sauvegard
 
 Une phrase est probablement ce qu'il y a de mieux : 3 ou 4 mots et expressions du dictionnaire suffisent.
 Libre à vous de les combiner comme vous voulez (caractères de séparation, Majuscule, etc.).
-Vous pouvez vous reporter à [la page au hasard du wiktionnaire Français](http://tools.wmflabs.org/anagrimes/hasard.php?langue=fr) pour contruire votre phrase.
+Vous pouvez vous reporter à [la page au hasard du wiktionnaire Français](http://tools.wmflabs.org/anagrimes/hasard.php?langue=fr) pour contruire votre phrase. \
 Exemple à ne pas utiliser, car il est public (généré en cliquant 3 fois de suite sur le lien) :
 
 ```
@@ -31,7 +31,7 @@ brick eider d'Europe protocolairement
 On peut la transformer un peu (là encore faites des choix personnels et différents de transformation) :
 
 ```
-br1ck_eider d'Europe?protocolairem#ent
+br1ck_EIDER d'Europe?protocolairem#ent
 ```
 
 ### Choisir un mot de passe de session (Windows, Linux, Android, iOS, ...) complexe
