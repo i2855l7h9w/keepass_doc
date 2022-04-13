@@ -34,7 +34,7 @@ Si quelqu'un obtient l'accès à ces service, il pourra vous causer du tort : co
 
 ### Ne pas installer d'extension de remplissage automatique de navigateur (ou l'activer partiellement seulement)
 
-Une façon de tirer parti de ce genre d'extension est "d'imiter" un champs de votre fournisseur email préférée (par exemple). L'extension s'y laisse alors prendre et pré-rempli le champs, vous laissant le soin de valider (ce que vous ne ferez alors pas, ayant détecté la supercherie). Mais le champs peut déjà avoir transmis les informations fournies, et donc obtenu votre mot de passe.
+Une façon de pirater ce genre d'extension est "d'imiter" un champs de votre fournisseur email préférée (par exemple). L'extension s'y laisse prendre et pré-rempli le champs, vous laissant le soin de valider (ce que vous ne ferez alors pas, ayant détecté la supercherie). Mais le champs peut déjà avoir transmis les informations fournies, et donc obtenu votre mot de passe.
 
 Il est parfois possible en revanche d'activer le remplissage du mot de passe seulement à la demande.
 
