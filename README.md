@@ -136,12 +136,13 @@ Puis au fur et à mesure, les changer pour des mots de passe générés (40 cara
 
 Il est plus sécurisé de vérouiller les fichiers Keepass lorsque la session se vérouille elle-même (donc redemander le mot de passe principal ensuite):
 <details><summary> Pour Windows </summary><p>
-Cette option est proposée dans Keepass2 directement
+Cette option est proposée dans KeepassXC (et Keepass2) directement
 </p></details>
 
 <details><summary> Pour Debian/Ubuntu </summary><p>
+Cette option est proposée dans KeepassXC directement.
 
-Le fichier [scriptLockSessionKeePass2.sh](https://github.com/i2855l7h9w/keepass_doc/blob/master/debian/gnome/scriptLockSessionKeePass2.sh) est lancé par [scriptLockSessionKeePass2.desktop](https://github.com/i2855l7h9w/keepass_doc/blob/master/debian/gnome/scriptLockSessionKeePass2.desktop) sur *Gnome*.
+Pour Keepass2 : Le fichier [scriptLockSessionKeePass2.sh](https://github.com/i2855l7h9w/keepass_doc/blob/master/debian/gnome/scriptLockSessionKeePass2.sh) est lancé par [scriptLockSessionKeePass2.desktop](https://github.com/i2855l7h9w/keepass_doc/blob/master/debian/gnome/scriptLockSessionKeePass2.desktop) sur *Gnome*.
 
 > Ces scripts sont susceptibles de devoir être modifiés pour chaque usage!
 </p></details>
