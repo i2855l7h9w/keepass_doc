@@ -34,6 +34,8 @@ On peut la transformer un peu (là encore faites des choix personnels et différ
 br1ck_EIDER d'Europe?protocolairem#ent
 ```
 
+Détails : https://fr.wikipedia.org/wiki/Phrase_secr%C3%A8te
+
 ### Choisir un mot de passe de session (Windows, Linux, Android, iOS, ...) complexe
 
 Tout les mots de passe que vous aurez encore besoin de taper (autre que le mot de passe principal) devraient être aussi sécurisés que le mot de passe principal, car ils y donnent probablement accès.
